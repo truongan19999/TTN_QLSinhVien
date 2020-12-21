@@ -93,5 +93,33 @@ namespace QuanLyHocSinhTHPT.GUI
             txtDiem45phut.Text = "";
             cboHocSinh.DataSource = HocSinhDAO.Instance.GetAll();
         }
+		private void btnLamTrong_Click(object sender, EventArgs e)
+        {
+            MakeNull();
+        }
+        private void LoadList()
+        {
+            int idMonHoc;
+            Int32.TryParse(txtIdMonHoc.Text, out idMonHoc);
+            diemSoList.DataSource = BangDiemDAO.Instance.GetAll();
+            monHocList.DataSource = MonHocDAO.Instance.GetAll();
+        }
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            string str = txtTimKiem.Text.Trim();
+            if (str == "")
+            {
+                MessageBox.Show("Chưa nhập thông tin tìm kiếm");
+                return;
+            }
+            monHocList.DataSource = MonHocDAO.Instance.Search(str);
+            diemSoList.DataSource = BangDiemDAO.Instance.Search(str);
+
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            LoadListMonHoc();
+        }
     }
 }
