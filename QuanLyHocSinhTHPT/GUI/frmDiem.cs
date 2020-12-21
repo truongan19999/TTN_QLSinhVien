@@ -1,0 +1,26 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+using QuanLyHocSinhTHPT.DAO;
+
+namespace QuanLyHocSinhTHPT.GUI
+{
+    public partial class frmDiem : Form
+    {
+        BindingSource diemSoList = new BindingSource();
+        BindingSource monHocList = new BindingSource();
+
+        public frmDiem()
+        {
+            InitializeComponent();
+            LoadFirstTime();
+        }
+        
+    }
+}
