@@ -75,6 +75,77 @@ namespace QuanLyHocSinhTHPT.GUI
             LoadListGiaoVien();
         }
 
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            int idGiaoVien;
+            Int32.TryParse(txtIdGiaoVien.Text.Trim(), out idGiaoVien);
+            try
+            {
+                GiaoVienDAO.Instance.Delete(idGiaoVien);
+                MessageBox.Show("Xóa thành công");
+                LoadListGiaoVien();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Có lỗi xảy ra" + err.ToString());
+                LoadListGiaoVien();
+            }
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            string tenGiaoVien = txtTenGiaoVien.Text.Trim();
+            string gioiTinh = rdbNam.Checked ? "Nam" : "Nữ";
+            DateTime ngaySinh;
+            DateTime.TryParse(dtpNgaySinh.Text, out ngaySinh);
+            string soDienThoai = txtSoDienThoai.Text;
+
+            try
+            {
+                if(tenGiaoVien == "" || ngaySinh == null || soDienThoai == "")
+                {
+                    MessageBox.Show("Vui lòng điền đầy đủ thông tin");
+                    return;
+                }
+                GiaoVienDAO.Instance.Insert(tenGiaoVien, gioiTinh, ngaySinh, soDienThoai);
+                MessageBox.Show("Thêm thành công");
+                LoadListGiaoVien();
+            } catch (Exception err)
+            {
+                MessageBox.Show("Có lỗi xảy ra" + err.ToString());
+                LoadListGiaoVien();
+            }
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            int idGiaoVien = -1;
+            Int32.TryParse(txtIdGiaoVien.Text.Trim(), out idGiaoVien);
+
+            string tenGiaoVien = txtTenGiaoVien.Text.Trim();
+            string gioiTinh = rdbNam.Checked ? "Nam" : "Nữ";
+            DateTime ngaySinh;
+            DateTime.TryParse(dtpNgaySinh.Text, out ngaySinh);
+            string soDienThoai = txtSoDienThoai.Text;
+
+            try
+            {
+                if (tenGiaoVien == "" || ngaySinh == null || soDienThoai == "" || idGiaoVien == -1)
+                {
+                    MessageBox.Show("Vui lòng điền đầy đủ thông tin");
+                    return;
+                }
+                GiaoVienDAO.Instance.Update(idGiaoVien, tenGiaoVien, gioiTinh, ngaySinh, soDienThoai);
+                MessageBox.Show("Sửa thành công");
+                LoadListGiaoVien();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Có lỗi xảy ra" + err.ToString());
+                LoadListGiaoVien();
+            }
+        }
+
         private void txtSoDienThoai_KeyPress(object sender, KeyPressEventArgs e)
         {
             char ch = e.KeyChar;
