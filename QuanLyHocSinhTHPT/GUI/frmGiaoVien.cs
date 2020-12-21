@@ -55,5 +55,33 @@ namespace QuanLyHocSinhTHPT.GUI
             rdbNu.DataBindings.Add(fmaleBinding);
             rdbNu.CheckedChanged += (s, args) => rdbNam.Checked = !rdbNu.Checked;
         }
+
+        private void MakeNull()
+        {
+            txtIdGiaoVien.Text = "";
+            txtSoDienThoai.Text = "";
+            txtTenGiaoVien.Text = "";
+            dtpNgaySinh.Value = DateTime.Now;
+            txtTimKiem.Text = "";
+        }
+
+        private void btnLamTrong_Click(object sender, EventArgs e)
+        {
+            MakeNull();
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            LoadListGiaoVien();
+        }
+
+        private void txtSoDienThoai_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if(!Char.IsDigit(ch) && ch != 8 && ch!= 46)
+            {
+                e.Handled = true;
+            }
+        }
     }
 }
