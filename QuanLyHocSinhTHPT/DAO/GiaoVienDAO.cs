@@ -47,6 +47,16 @@ namespace QuanLyHocSinhTHPT.DAO
 
             return result > 0;
         }
-        
+        public List<GiaoVienDTO> Search(string searchValue)
+        {
+            List<GiaoVienDTO> list = new List<GiaoVienDTO>();
+            DataTable data = DataProvider.Instance.ExecuteQuery("SP_GiaoVien_Search @searchValue", new object[] { searchValue });
+            foreach (DataRow item in data.Rows)
+            {
+                GiaoVienDTO entry = new GiaoVienDTO(item);
+                list.Add(entry);
+            }
+            return list;
+        }
     }
 }

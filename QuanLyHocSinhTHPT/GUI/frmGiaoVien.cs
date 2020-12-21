@@ -70,6 +70,17 @@ namespace QuanLyHocSinhTHPT.GUI
             MakeNull();
         }
 
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string str = txtTimKiem.Text.Trim();
+            if (str == "")
+            {
+                MessageBox.Show("Chưa nhập thông tin tìm kiếm");
+                return;
+            }
+            giaoVienList.DataSource = GiaoVienDAO.Instance.Search(str);
+        }
+
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             LoadListGiaoVien();
