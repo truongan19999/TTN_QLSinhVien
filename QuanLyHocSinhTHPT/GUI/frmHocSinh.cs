@@ -13,6 +13,20 @@ namespace QuanLyHocSinhTHPT.GUI
 {
     public partial class frmHocSinh : Form
     {
-        
+        BindingSource hocSinhList = new BindingSource();
+
+        public frmHocSinh()
+        {
+            InitializeComponent();
+            LoadFirstTime();
+        }
+        private void LoadFirstTime()
+        {
+            dgvHocSinh.DataSource = hocSinhList;
+            LoadListHocSinh();
+            LoadComboboxLopHoc();
+            EditDataGridView();
+            BindingDataToFrom();
+        }
     }
 }
