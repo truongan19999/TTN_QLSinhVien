@@ -122,6 +122,36 @@ namespace QuanLyHocSinhTHPT.GUI
                 LoadListHocSinh();
             }
         }
-	
+	private void button5_Click(object sender, EventArgs e)
+        {
+            string str = txtTimKiem.Text.Trim();
+            if (str == "") {
+                MessageBox.Show("Chưa nhập thông tin tìm kiếm");
+                return;
+            } 
+            hocSinhList.DataSource = HocSinhDAO.Instance.Search(str);
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            hocSinhList.DataSource = HocSinhDAO.Instance.GetAll();
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            int idHocSinh;
+            Int32.TryParse(txtIdHocSinh.Text.Trim(), out idHocSinh);
+            try
+            {
+                HocSinhDAO.Instance.Delete(idHocSinh);
+                MessageBox.Show("Xóa thành công");
+                LoadListHocSinh();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Có lỗi xảy ra" + err.ToString());
+                LoadListHocSinh();
+            }
+        }
     }
 }
