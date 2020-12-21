@@ -21,6 +21,34 @@ namespace QuanLyHocSinhTHPT.GUI
             InitializeComponent();
             LoadFirstTime();
         }
-        
+        private void LoadFirstTime()
+        {
+            dgvMonHoc.DataSource = monHocList;
+            dgvDiemSo.DataSource = diemSoList;
+            LoadListMonHoc();
+            EditDataGridView();
+            BindingDataToFrom();
+            LoadComboboxIdHocSinh();
+            int idMonHoc;
+            Int32.TryParse(txtIdMonHoc.Text, out idMonHoc);
+            diemSoList.DataSource = BangDiemDAO.Instance.GetByIdMonHoc(idMonHoc);
+
+        }
+        private void LoadComboboxIdHocSinh()
+        {
+            cboHocSinh.DataSource = HocSinhDAO.Instance.GetAll();
+            cboHocSinh.DisplayMember = "IdHocSinh";
+            cboHocSinh.ValueMember = "IdHocSinh";
+        }
+  
+        private void LoadListMonHoc()
+        {
+            monHocList.DataSource = MonHocDAO.Instance.GetAll();
+            diemSoList.DataSource = BangDiemDAO.Instance.GetAll();
+        }
+        private void LoadListDiemSo(int idMonHoc)
+        {
+            diemSoList.DataSource = BangDiemDAO.Instance.GetByIdMonHoc(idMonHoc);
+        }
     }
 }
