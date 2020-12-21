@@ -71,6 +71,57 @@ namespace QuanLyHocSinhTHPT.GUI
             MakeNull();
         }
 
-
+	private void btnThem_Click(object sender, EventArgs e)
+        {
+            string tenHocSinh = txtTenHocSinh.Text;
+            int idLopHoc = -1;
+            Int32.TryParse(cboIdLopHoc.Text, out idLopHoc);
+            string gioiTinh = rdbNam.Checked ? "Nam" : "Nữ";
+            DateTime ngaySinh;
+            DateTime.TryParse(dtpNgaySinh.Text, out ngaySinh);
+            try
+            {
+                if (tenHocSinh == "" || idLopHoc == -1 || ngaySinh == null)
+                {
+                    MessageBox.Show("Vui lòng điền đầy đủ thông tin");
+                    return;
+                }
+                HocSinhDAO.Instance.Insert(tenHocSinh, gioiTinh, ngaySinh, idLopHoc);
+                MessageBox.Show("Thêm thành công");
+                LoadListHocSinh();
+            } catch (Exception err)
+            {
+                MessageBox.Show("Có lỗi xảy ra" + err.ToString());
+                LoadListHocSinh();
+            }
+        }
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            int idHocSinh ;
+            Int32.TryParse(txtIdHocSinh.Text.Trim(), out idHocSinh);
+            string tenHocSinh = txtTenHocSinh.Text.Trim();
+            int idLopHoc = -1;
+            Int32.TryParse(cboIdLopHoc.Text.Trim(), out idLopHoc);
+            string gioiTinh = rdbNam.Checked ? "Nam" : "Nữ";
+            DateTime ngaySinh;
+            DateTime.TryParse(dtpNgaySinh.Text, out ngaySinh);
+            try
+            {
+                if (tenHocSinh == "" || idLopHoc == -1 || ngaySinh == null || idHocSinh == -1)
+                {
+                    MessageBox.Show("Vui lòng điền đầy đủ thông tin");
+                    return;
+                }
+                HocSinhDAO.Instance.Update(idHocSinh,tenHocSinh, gioiTinh, ngaySinh, idLopHoc);
+                MessageBox.Show("Sửa thành công");
+                LoadListHocSinh();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Có lỗi xảy ra" + err.ToString());
+                LoadListHocSinh();
+            }
+        }
+	
     }
 }
