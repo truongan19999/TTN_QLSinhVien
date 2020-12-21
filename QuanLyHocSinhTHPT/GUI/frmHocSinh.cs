@@ -28,8 +28,7 @@ namespace QuanLyHocSinhTHPT.GUI
             EditDataGridView();
             BindingDataToFrom();
         }
-
-	private void LoadListHocSinh()
+        private void LoadListHocSinh()
         {
             hocSinhList.DataSource = HocSinhDAO.Instance.GetAll();
         }
@@ -71,7 +70,7 @@ namespace QuanLyHocSinhTHPT.GUI
             MakeNull();
         }
 
-	private void btnThem_Click(object sender, EventArgs e)
+        private void btnThem_Click(object sender, EventArgs e)
         {
             string tenHocSinh = txtTenHocSinh.Text;
             int idLopHoc = -1;
@@ -122,7 +121,7 @@ namespace QuanLyHocSinhTHPT.GUI
                 LoadListHocSinh();
             }
         }
-	private void button5_Click(object sender, EventArgs e)
+        private void button5_Click(object sender, EventArgs e)
         {
             string str = txtTimKiem.Text.Trim();
             if (str == "") {
