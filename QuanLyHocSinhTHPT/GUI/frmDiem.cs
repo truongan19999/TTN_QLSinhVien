@@ -121,5 +121,94 @@ namespace QuanLyHocSinhTHPT.GUI
         {
             LoadListMonHoc();
         }
+		private void btnXoa_Click(object sender, EventArgs e)
+        {
+            int idDiem;
+            Int32.TryParse(txtIdDiem.Text.Trim(), out idDiem);
+            try
+            {
+                BangDiemDAO.Instance.Delete(idDiem);
+                MessageBox.Show("Xóa thành công");
+                monHocList.DataSource = MonHocDAO.Instance.GetAll();
+                diemSoList.DataSource = BangDiemDAO.Instance.GetAll();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Có lỗi xảy ra" + err.ToString());
+                monHocList.DataSource = MonHocDAO.Instance.GetAll();
+                diemSoList.DataSource = BangDiemDAO.Instance.GetAll();
+            }
+        }
+
+        private void btnThem_Click(object sender, EventArgs e)
+        {
+            float diem15 = -1;
+            float.TryParse(txtDiem15phut.Text.Trim(), out diem15);
+
+            float diem45 = -1;
+            float.TryParse(txtDiem45phut.Text.Trim(), out diem45);
+
+            float diemHocKi = -1;
+            float.TryParse(txtDiemHocKi.Text.Trim(), out diemHocKi);
+
+            int idMonHoc = -1;
+            Int32.TryParse(txtIdMonHoc.Text.Trim(), out idMonHoc);
+
+            int idHocSinh = -1;
+            Int32.TryParse(cboHocSinh.Text.Trim(), out idHocSinh);
+            try
+            {
+                if (diem15 == -1 || diem45 == -1 || diemHocKi == -1 || idMonHoc == -1 || idHocSinh == -1)
+                {
+                    MessageBox.Show("Vui lòng điền đầy đủ thông tin");
+                    return;
+                }
+                BangDiemDAO.Instance.Insert(diem15, diem45, diemHocKi, idMonHoc, idHocSinh);
+                MessageBox.Show("Thêm thành công");
+                LoadList();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Có lỗi xảy ra" + err.ToString());
+                LoadList();
+            }
+        }
+
+        private void btnSua_Click(object sender, EventArgs e)
+        {
+            int idDiem = -1;
+            Int32.TryParse(txtIdDiem.Text.Trim(), out idDiem);
+
+            float diem15 = -1;
+            float.TryParse(txtDiem15phut.Text.Trim(), out diem15);
+
+            float diem45 = -1;
+            float.TryParse(txtDiem45phut.Text.Trim(), out diem45);
+
+            float diemHocKi = -1;
+            float.TryParse(txtDiemHocKi.Text.Trim(), out diemHocKi);
+
+            int idMonHoc = -1;
+            Int32.TryParse(txtIdMonHoc.Text.Trim(), out idMonHoc);
+
+            int idHocSinh = -1;
+            Int32.TryParse(cboHocSinh.Text.Trim(), out idHocSinh);
+            try
+            {
+                if (idDiem == -1 || diem15 == -1 || diem45 == -1 || diemHocKi == -1 || idMonHoc == -1 || idHocSinh == -1)
+                {
+                    MessageBox.Show("Vui lòng điền đầy đủ thông tin");
+                    return;
+                }
+                BangDiemDAO.Instance.Update(idDiem, diem15, diem45, diemHocKi, idMonHoc, idHocSinh);
+                MessageBox.Show("Cập nhật thành công");
+                LoadList();
+            }
+            catch (Exception err)
+            {
+                MessageBox.Show("Có lỗi xảy ra" + err.ToString());
+                LoadList();
+            }
+        }
     }
 }
