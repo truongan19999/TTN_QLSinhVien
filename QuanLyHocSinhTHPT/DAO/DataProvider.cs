@@ -21,7 +21,7 @@ namespace QuanLyHocSinhTHPT.DAO
 
         private DataProvider() { }
 
-        string connectionSTR = @"Data Source=NGUYENDINHDAI\SQLEXPRESS;Initial Catalog=QLHS;Integrated Security=True";
+        string connectionSTR = @"Data Source=NGUYENDINHDAI\SQLEXPRESS;Initial Catalog=TT_QLHS;Integrated Security=True";
 
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
