@@ -37,6 +37,7 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnLamTrong = new System.Windows.Forms.Button();
             this.txtNamHoc = new System.Windows.Forms.TextBox();
             this.cboIdGiaoVien = new System.Windows.Forms.ComboBox();
             this.txtTenKhoi = new System.Windows.Forms.TextBox();
@@ -47,7 +48,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnLamTrong = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLopHoc)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -60,6 +60,7 @@
             this.dgvLopHoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvLopHoc.Location = new System.Drawing.Point(26, 310);
             this.dgvLopHoc.Name = "dgvLopHoc";
+            this.dgvLopHoc.RowHeadersWidth = 51;
             this.dgvLopHoc.RowTemplate.Height = 24;
             this.dgvLopHoc.Size = new System.Drawing.Size(1111, 473);
             this.dgvLopHoc.TabIndex = 11;
@@ -153,7 +154,17 @@
             this.groupBox1.Size = new System.Drawing.Size(721, 242);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "t";
+            this.groupBox1.Text = "Thông tin lớp học";
+            // 
+            // btnLamTrong
+            // 
+            this.btnLamTrong.Location = new System.Drawing.Point(544, 166);
+            this.btnLamTrong.Name = "btnLamTrong";
+            this.btnLamTrong.Size = new System.Drawing.Size(100, 40);
+            this.btnLamTrong.TabIndex = 5;
+            this.btnLamTrong.Text = "Làm trống";
+            this.btnLamTrong.UseVisualStyleBackColor = true;
+            this.btnLamTrong.Click += new System.EventHandler(this.btnLamTrong_Click);
             // 
             // txtNamHoc
             // 
@@ -237,16 +248,6 @@
             this.label1.Size = new System.Drawing.Size(76, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID Lớp học";
-            // 
-            // btnLamTrong
-            // 
-            this.btnLamTrong.Location = new System.Drawing.Point(544, 166);
-            this.btnLamTrong.Name = "btnLamTrong";
-            this.btnLamTrong.Size = new System.Drawing.Size(100, 40);
-            this.btnLamTrong.TabIndex = 5;
-            this.btnLamTrong.Text = "Làm trống";
-            this.btnLamTrong.UseVisualStyleBackColor = true;
-            this.btnLamTrong.Click += new System.EventHandler(this.btnLamTrong_Click);
             // 
             // frmLopHoc
             // 
