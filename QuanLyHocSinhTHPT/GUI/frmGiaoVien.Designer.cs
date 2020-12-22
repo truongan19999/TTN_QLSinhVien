@@ -56,6 +56,9 @@
             // 
             // dgvGiaoVien
             // 
+            this.dgvGiaoVien.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvGiaoVien.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvGiaoVien.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dgvGiaoVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -63,11 +66,12 @@
             this.dgvGiaoVien.Name = "dgvGiaoVien";
             this.dgvGiaoVien.RowHeadersWidth = 51;
             this.dgvGiaoVien.RowTemplate.Height = 24;
-            this.dgvGiaoVien.Size = new System.Drawing.Size(1111, 473);
+            this.dgvGiaoVien.Size = new System.Drawing.Size(1111, 615);
             this.dgvGiaoVien.TabIndex = 8;
             // 
             // groupBox2
             // 
+            this.groupBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox2.Controls.Add(this.btnRefresh);
             this.groupBox2.Controls.Add(this.txtTimKiem);
             this.groupBox2.Controls.Add(this.button5);
@@ -99,9 +103,9 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(227, 162);
+            this.button5.Location = new System.Drawing.Point(227, 171);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(100, 40);
+            this.button5.Size = new System.Drawing.Size(100, 22);
             this.button5.TabIndex = 4;
             this.button5.Text = "Tìm kiếm";
             this.button5.UseVisualStyleBackColor = true;
@@ -139,6 +143,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupBox1.Controls.Add(this.btnLamTrong);
             this.groupBox1.Controls.Add(this.txtSoDienThoai);
             this.groupBox1.Controls.Add(this.dtpNgaySinh);
