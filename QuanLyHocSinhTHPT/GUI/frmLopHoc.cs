@@ -86,19 +86,24 @@ namespace QuanLyHocSinhTHPT.GUI
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            int idLopHoc;
-            Int32.TryParse(txtIdLopHoc.Text.Trim(), out idLopHoc);
-            try
+            DialogResult dlr = MessageBox.Show("Bạn chắc chắn xoá ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dlr == DialogResult.Yes)
             {
-                LopHocDAO.Instance.Delete(idLopHoc);
-                MessageBox.Show("Xóa thành công");
-                LoadListLopHoc();
+                int idLopHoc;
+                Int32.TryParse(txtIdLopHoc.Text.Trim(), out idLopHoc);
+                try
+                {
+                    LopHocDAO.Instance.Delete(idLopHoc);
+                    MessageBox.Show("Xóa thành công");
+                    LoadListLopHoc();
+                }
+                catch (Exception err)
+                {
+                    MessageBox.Show("Có lỗi xảy ra" + err.ToString());
+                    LoadListLopHoc();
+                }
             }
-            catch (Exception err)
-            {
-                MessageBox.Show("Có lỗi xảy ra" + err.ToString());
-                LoadListLopHoc();
-            }
+            
         }
         private void btnThem_Click(object sender, EventArgs e)
         {
