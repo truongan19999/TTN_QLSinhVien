@@ -1,0 +1,14 @@
+E:\Tai lieu ki 1 nam 4\ThucTapNhom\TTN_QLSinhVien\QuanLyHocSinhTHPT\bin\Debug\QuanLyHocSinhTHPT.exe.config
+E:\Tai lieu ki 1 nam 4\ThucTapNhom\TTN_QLSinhVien\QuanLyHocSinhTHPT\bin\Debug\QuanLyHocSinhTHPT.exe
+E:\Tai lieu ki 1 nam 4\ThucTapNhom\TTN_QLSinhVien\QuanLyHocSinhTHPT\bin\Debug\QuanLyHocSinhTHPT.pdb
+E:\Tai lieu ki 1 nam 4\ThucTapNhom\TTN_QLSinhVien\QuanLyHocSinhTHPT\obj\Debug\QuanLyHocSinhTHPT.csprojAssemblyReference.cache
+E:\Tai lieu ki 1 nam 4\ThucTapNhom\TTN_QLSinhVien\QuanLyHocSinhTHPT\obj\Debug\QuanLyHocSinhTHPT.GUI.frmDiem.resources
+E:\Tai lieu ki 1 nam 4\ThucTapNhom\TTN_QLSinhVien\QuanLyHocSinhTHPT\obj\Debug\QuanLyHocSinhTHPT.GUI.frmGiaoVien.resources
+E:\Tai lieu ki 1 nam 4\ThucTapNhom\TTN_QLSinhVien\QuanLyHocSinhTHPT\obj\Debug\QuanLyHocSinhTHPT.GUI.frmHocSinh.resources
+E:\Tai lieu ki 1 nam 4\ThucTapNhom\TTN_QLSinhVien\QuanLyHocSinhTHPT\obj\Debug\QuanLyHocSinhTHPT.GUI.frmLopHoc.resources
+E:\Tai lieu ki 1 nam 4\ThucTapNhom\TTN_QLSinhVien\QuanLyHocSinhTHPT\obj\Debug\QuanLyHocSinhTHPT.GUI.frmMain.resources
+E:\Tai lieu ki 1 nam 4\ThucTapNhom\TTN_QLSinhVien\QuanLyHocSinhTHPT\obj\Debug\QuanLyHocSinhTHPT.GUI.frmMonHoc.resources
+E:\Tai lieu ki 1 nam 4\ThucTapNhom\TTN_QLSinhVien\QuanLyHocSinhTHPT\obj\Debug\QuanLyHocSinhTHPT.Properties.Resources.resources
+E:\Tai lieu ki 1 nam 4\ThucTapNhom\TTN_QLSinhVien\QuanLyHocSinhTHPT\obj\Debug\QuanLyHocSinhTHPT.csproj.GenerateResource.cache
+E:\Tai lieu ki 1 nam 4\ThucTapNhom\TTN_QLSinhVien\QuanLyHocSinhTHPT\obj\Debug\QuanLyHocSinhTHPT.exe
+E:\Tai lieu ki 1 nam 4\ThucTapNhom\TTN_QLSinhVien\QuanLyHocSinhTHPT\obj\Debug\QuanLyHocSinhTHPT.pdb
