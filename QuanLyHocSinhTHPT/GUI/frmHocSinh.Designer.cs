@@ -30,6 +30,7 @@
         {
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnLamTrong = new System.Windows.Forms.Button();
             this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.cboIdLopHoc = new System.Windows.Forms.ComboBox();
             this.txtTenHocSinh = new System.Windows.Forms.TextBox();
@@ -49,7 +50,6 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.dgvHocSinh = new System.Windows.Forms.DataGridView();
-            this.btnLamTrong = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHocSinh)).BeginInit();
@@ -75,6 +75,16 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin học sinh";
+            // 
+            // btnLamTrong
+            // 
+            this.btnLamTrong.Location = new System.Drawing.Point(544, 171);
+            this.btnLamTrong.Name = "btnLamTrong";
+            this.btnLamTrong.Size = new System.Drawing.Size(100, 40);
+            this.btnLamTrong.TabIndex = 5;
+            this.btnLamTrong.Text = "Làm trống";
+            this.btnLamTrong.UseVisualStyleBackColor = true;
+            this.btnLamTrong.Click += new System.EventHandler(this.btnLamTrong_Click);
             // 
             // dtpNgaySinh
             // 
@@ -190,7 +200,7 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(160, 87);
+            this.btnRefresh.Location = new System.Drawing.Point(227, 87);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(100, 40);
             this.btnRefresh.TabIndex = 3;
@@ -227,7 +237,7 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(160, 21);
+            this.btnXoa.Location = new System.Drawing.Point(227, 21);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(100, 40);
             this.btnXoa.TabIndex = 1;
@@ -252,19 +262,10 @@
             this.dgvHocSinh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvHocSinh.Location = new System.Drawing.Point(34, 314);
             this.dgvHocSinh.Name = "dgvHocSinh";
+            this.dgvHocSinh.RowHeadersWidth = 51;
             this.dgvHocSinh.RowTemplate.Height = 24;
             this.dgvHocSinh.Size = new System.Drawing.Size(1111, 480);
             this.dgvHocSinh.TabIndex = 5;
-            // 
-            // btnLamTrong
-            // 
-            this.btnLamTrong.Location = new System.Drawing.Point(544, 171);
-            this.btnLamTrong.Name = "btnLamTrong";
-            this.btnLamTrong.Size = new System.Drawing.Size(100, 40);
-            this.btnLamTrong.TabIndex = 5;
-            this.btnLamTrong.Text = "Làm trống";
-            this.btnLamTrong.UseVisualStyleBackColor = true;
-            this.btnLamTrong.Click += new System.EventHandler(this.btnLamTrong_Click);
             // 
             // frmHocSinh
             // 
