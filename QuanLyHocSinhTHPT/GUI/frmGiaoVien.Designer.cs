@@ -37,6 +37,7 @@
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnLamTrong = new System.Windows.Forms.Button();
             this.txtSoDienThoai = new System.Windows.Forms.TextBox();
             this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.txtTenGiaoVien = new System.Windows.Forms.TextBox();
@@ -48,7 +49,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnLamTrong = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGiaoVien)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -61,6 +61,7 @@
             this.dgvGiaoVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvGiaoVien.Location = new System.Drawing.Point(27, 311);
             this.dgvGiaoVien.Name = "dgvGiaoVien";
+            this.dgvGiaoVien.RowHeadersWidth = 51;
             this.dgvGiaoVien.RowTemplate.Height = 24;
             this.dgvGiaoVien.Size = new System.Drawing.Size(1111, 473);
             this.dgvGiaoVien.TabIndex = 8;
@@ -81,7 +82,7 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(160, 87);
+            this.btnRefresh.Location = new System.Drawing.Point(227, 87);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(100, 40);
             this.btnRefresh.TabIndex = 3;
@@ -118,7 +119,7 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(160, 21);
+            this.btnXoa.Location = new System.Drawing.Point(227, 24);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(100, 40);
             this.btnXoa.TabIndex = 1;
@@ -156,6 +157,16 @@
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin giáo viên";
+            // 
+            // btnLamTrong
+            // 
+            this.btnLamTrong.Location = new System.Drawing.Point(544, 164);
+            this.btnLamTrong.Name = "btnLamTrong";
+            this.btnLamTrong.Size = new System.Drawing.Size(100, 40);
+            this.btnLamTrong.TabIndex = 5;
+            this.btnLamTrong.Text = "Làm trống";
+            this.btnLamTrong.UseVisualStyleBackColor = true;
+            this.btnLamTrong.Click += new System.EventHandler(this.btnLamTrong_Click);
             // 
             // txtSoDienThoai
             // 
@@ -254,16 +265,6 @@
             this.label1.Size = new System.Drawing.Size(85, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "ID Giáo viên";
-            // 
-            // btnLamTrong
-            // 
-            this.btnLamTrong.Location = new System.Drawing.Point(544, 164);
-            this.btnLamTrong.Name = "btnLamTrong";
-            this.btnLamTrong.Size = new System.Drawing.Size(100, 40);
-            this.btnLamTrong.TabIndex = 5;
-            this.btnLamTrong.Text = "Làm trống";
-            this.btnLamTrong.UseVisualStyleBackColor = true;
-            this.btnLamTrong.Click += new System.EventHandler(this.btnLamTrong_Click);
             // 
             // frmGiaoVien
             // 

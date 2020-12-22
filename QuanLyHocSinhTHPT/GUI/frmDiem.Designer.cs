@@ -29,6 +29,14 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtIdMonHoc = new System.Windows.Forms.Label();
+            this.cboHocSinh = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtDiemHocKi = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtDiem45phut = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.btnLamTrong = new System.Windows.Forms.Button();
             this.txtDiem15phut = new System.Windows.Forms.TextBox();
             this.txtIdDiem = new System.Windows.Forms.Label();
@@ -43,14 +51,6 @@
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.dgvDiemSo = new System.Windows.Forms.DataGridView();
-            this.txtDiem45phut = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtDiemHocKi = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cboHocSinh = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtIdMonHoc = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMonHoc)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -78,6 +78,73 @@
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin điểm";
+            // 
+            // txtIdMonHoc
+            // 
+            this.txtIdMonHoc.AutoSize = true;
+            this.txtIdMonHoc.Location = new System.Drawing.Point(547, 40);
+            this.txtIdMonHoc.Name = "txtIdMonHoc";
+            this.txtIdMonHoc.Size = new System.Drawing.Size(71, 17);
+            this.txtIdMonHoc.TabIndex = 17;
+            this.txtIdMonHoc.Text = "idMonHoc";
+            // 
+            // cboHocSinh
+            // 
+            this.cboHocSinh.FormattingEnabled = true;
+            this.cboHocSinh.Location = new System.Drawing.Point(550, 80);
+            this.cboHocSinh.Name = "cboHocSinh";
+            this.cboHocSinh.Size = new System.Drawing.Size(121, 24);
+            this.cboHocSinh.TabIndex = 16;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(424, 83);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(80, 17);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "ID Học sinh";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(424, 40);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(79, 17);
+            this.label5.TabIndex = 13;
+            this.label5.Text = "ID Môn học";
+            // 
+            // txtDiemHocKi
+            // 
+            this.txtDiemHocKi.Location = new System.Drawing.Point(127, 182);
+            this.txtDiemHocKi.Name = "txtDiemHocKi";
+            this.txtDiemHocKi.Size = new System.Drawing.Size(200, 22);
+            this.txtDiemHocKi.TabIndex = 12;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(19, 182);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(81, 17);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "Điểm học kì";
+            // 
+            // txtDiem45phut
+            // 
+            this.txtDiem45phut.Location = new System.Drawing.Point(127, 135);
+            this.txtDiem45phut.Name = "txtDiem45phut";
+            this.txtDiem45phut.Size = new System.Drawing.Size(200, 22);
+            this.txtDiem45phut.TabIndex = 10;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(19, 135);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(92, 17);
+            this.label3.TabIndex = 9;
+            this.label3.Text = "Điểm 45 phút";
             // 
             // btnLamTrong
             // 
@@ -140,6 +207,7 @@
             this.dgvMonHoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMonHoc.Location = new System.Drawing.Point(25, 311);
             this.dgvMonHoc.Name = "dgvMonHoc";
+            this.dgvMonHoc.RowHeadersWidth = 51;
             this.dgvMonHoc.RowTemplate.Height = 24;
             this.dgvMonHoc.Size = new System.Drawing.Size(503, 473);
             this.dgvMonHoc.TabIndex = 11;
@@ -161,7 +229,7 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(160, 87);
+            this.btnRefresh.Location = new System.Drawing.Point(227, 87);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(100, 40);
             this.btnRefresh.TabIndex = 3;
@@ -198,7 +266,7 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(160, 21);
+            this.btnXoa.Location = new System.Drawing.Point(227, 21);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(100, 40);
             this.btnXoa.TabIndex = 1;
@@ -213,76 +281,10 @@
             this.dgvDiemSo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDiemSo.Location = new System.Drawing.Point(557, 311);
             this.dgvDiemSo.Name = "dgvDiemSo";
+            this.dgvDiemSo.RowHeadersWidth = 51;
             this.dgvDiemSo.RowTemplate.Height = 24;
             this.dgvDiemSo.Size = new System.Drawing.Size(579, 473);
             this.dgvDiemSo.TabIndex = 12;
-            // 
-            // txtDiem45phut
-            // 
-            this.txtDiem45phut.Location = new System.Drawing.Point(127, 135);
-            this.txtDiem45phut.Name = "txtDiem45phut";
-            this.txtDiem45phut.Size = new System.Drawing.Size(200, 22);
-            this.txtDiem45phut.TabIndex = 10;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(19, 135);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 17);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Điểm 45 phút";
-            // 
-            // txtDiemHocKi
-            // 
-            this.txtDiemHocKi.Location = new System.Drawing.Point(127, 182);
-            this.txtDiemHocKi.Name = "txtDiemHocKi";
-            this.txtDiemHocKi.Size = new System.Drawing.Size(200, 22);
-            this.txtDiemHocKi.TabIndex = 12;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 182);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 17);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Điểm học kì";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(424, 40);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 17);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "ID Môn học";
-            // 
-            // cboHocSinh
-            // 
-            this.cboHocSinh.FormattingEnabled = true;
-            this.cboHocSinh.Location = new System.Drawing.Point(550, 80);
-            this.cboHocSinh.Name = "cboHocSinh";
-            this.cboHocSinh.Size = new System.Drawing.Size(121, 24);
-            this.cboHocSinh.TabIndex = 16;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(424, 83);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 17);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "ID Học sinh";
-            // 
-            // txtIdMonHoc
-            // 
-            this.txtIdMonHoc.AutoSize = true;
-            this.txtIdMonHoc.Location = new System.Drawing.Point(547, 40);
-            this.txtIdMonHoc.Name = "txtIdMonHoc";
-            this.txtIdMonHoc.Size = new System.Drawing.Size(71, 17);
-            this.txtIdMonHoc.TabIndex = 17;
-            this.txtIdMonHoc.Text = "idMonHoc";
             // 
             // frmDiem
             // 
