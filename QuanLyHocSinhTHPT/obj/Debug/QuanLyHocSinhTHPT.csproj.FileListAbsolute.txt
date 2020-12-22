@@ -12,3 +12,18 @@ E:\Tai lieu ki 1 nam 4\ThucTapNhom\TTN_QLSinhVien\QuanLyHocSinhTHPT\obj\Debug\Qu
 E:\Tai lieu ki 1 nam 4\ThucTapNhom\TTN_QLSinhVien\QuanLyHocSinhTHPT\obj\Debug\QuanLyHocSinhTHPT.csproj.GenerateResource.cache
 E:\Tai lieu ki 1 nam 4\ThucTapNhom\TTN_QLSinhVien\QuanLyHocSinhTHPT\obj\Debug\QuanLyHocSinhTHPT.exe
 E:\Tai lieu ki 1 nam 4\ThucTapNhom\TTN_QLSinhVien\QuanLyHocSinhTHPT\obj\Debug\QuanLyHocSinhTHPT.pdb
+D:\Ki1_nam4\ThucTapNhomProject\TTN_QLSinhVien\QuanLyHocSinhTHPT\bin\Debug\QuanLyHocSinhTHPT.exe.config
+D:\Ki1_nam4\ThucTapNhomProject\TTN_QLSinhVien\QuanLyHocSinhTHPT\bin\Debug\QuanLyHocSinhTHPT.exe
+D:\Ki1_nam4\ThucTapNhomProject\TTN_QLSinhVien\QuanLyHocSinhTHPT\bin\Debug\QuanLyHocSinhTHPT.pdb
+D:\Ki1_nam4\ThucTapNhomProject\TTN_QLSinhVien\QuanLyHocSinhTHPT\obj\Debug\QuanLyHocSinhTHPT.csprojAssemblyReference.cache
+D:\Ki1_nam4\ThucTapNhomProject\TTN_QLSinhVien\QuanLyHocSinhTHPT\obj\Debug\QuanLyHocSinhTHPT.GUI.frmDiem.resources
+D:\Ki1_nam4\ThucTapNhomProject\TTN_QLSinhVien\QuanLyHocSinhTHPT\obj\Debug\QuanLyHocSinhTHPT.GUI.frmGiaoVien.resources
+D:\Ki1_nam4\ThucTapNhomProject\TTN_QLSinhVien\QuanLyHocSinhTHPT\obj\Debug\QuanLyHocSinhTHPT.GUI.frmHocSinh.resources
+D:\Ki1_nam4\ThucTapNhomProject\TTN_QLSinhVien\QuanLyHocSinhTHPT\obj\Debug\QuanLyHocSinhTHPT.GUI.frmLopHoc.resources
+D:\Ki1_nam4\ThucTapNhomProject\TTN_QLSinhVien\QuanLyHocSinhTHPT\obj\Debug\QuanLyHocSinhTHPT.GUI.frmMain.resources
+D:\Ki1_nam4\ThucTapNhomProject\TTN_QLSinhVien\QuanLyHocSinhTHPT\obj\Debug\QuanLyHocSinhTHPT.GUI.frmMonHoc.resources
+D:\Ki1_nam4\ThucTapNhomProject\TTN_QLSinhVien\QuanLyHocSinhTHPT\obj\Debug\QuanLyHocSinhTHPT.Properties.Resources.resources
+D:\Ki1_nam4\ThucTapNhomProject\TTN_QLSinhVien\QuanLyHocSinhTHPT\obj\Debug\QuanLyHocSinhTHPT.csproj.GenerateResource.cache
+D:\Ki1_nam4\ThucTapNhomProject\TTN_QLSinhVien\QuanLyHocSinhTHPT\obj\Debug\QuanLyHocSinhTHPT.csproj.CoreCompileInputs.cache
+D:\Ki1_nam4\ThucTapNhomProject\TTN_QLSinhVien\QuanLyHocSinhTHPT\obj\Debug\QuanLyHocSinhTHPT.exe
+D:\Ki1_nam4\ThucTapNhomProject\TTN_QLSinhVien\QuanLyHocSinhTHPT\obj\Debug\QuanLyHocSinhTHPT.pdb

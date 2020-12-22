@@ -61,6 +61,7 @@
             this.dgvMonHoc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvMonHoc.Location = new System.Drawing.Point(34, 327);
             this.dgvMonHoc.Name = "dgvMonHoc";
+            this.dgvMonHoc.RowHeadersWidth = 51;
             this.dgvMonHoc.RowTemplate.Height = 24;
             this.dgvMonHoc.Size = new System.Drawing.Size(1111, 473);
             this.dgvMonHoc.TabIndex = 14;
@@ -81,7 +82,7 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(160, 87);
+            this.btnRefresh.Location = new System.Drawing.Point(227, 87);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(100, 40);
             this.btnRefresh.TabIndex = 3;
@@ -118,7 +119,7 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(160, 21);
+            this.btnXoa.Location = new System.Drawing.Point(227, 24);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(100, 40);
             this.btnXoa.TabIndex = 1;
